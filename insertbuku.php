@@ -1,6 +1,9 @@
 <?php
 // Include file koneksi.php untuk mendapatkan koneksi ke database
 include 'connection.php';
+header('Access-Control-Allow-Origin: http://localhost:5173');
+header('Access-Control-Allow-Methods: GET, POST');
+header('Access-Control-Allow-Headers: Content-Type');
 
 // Mendapatkan data yang dikirim melalui metode POST
 $kode = isset($_POST['kode']) ? $_POST['kode'] : '';
